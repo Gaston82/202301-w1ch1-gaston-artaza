@@ -1,0 +1,139 @@
+body {
+  background-color: pink;
+  font-family: "Roboto Mono", monospace;
+}
+
+#rosco-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 1rem;
+}
+
+.game-title {
+  text-align: center;
+  color: white;
+}
+
+.game-container {
+  display: flex;
+  justify-content: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.game-rules-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#game-rules {
+  max-width: 600px;
+  line-height: 2;
+  font-size: 16px;
+  margin-bottom: 3rem;
+}
+
+.circle {
+  border: 1px solid black;
+  width: 40px;
+  border-radius: 50%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: lightblue;
+}
+
+.button {
+  padding: 5px 25px;
+  border-radius: 10px;
+  border: 2px solid lightblue;
+  text-transform: uppercase;
+  background-color: white;
+  outline: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: lightblue;
+  color: white;
+}
+
+#display-questions {
+  max-width: 400px;
+  margin-left: 2rem;
+}
+
+.red {
+  background-color: red;
+  color: white;
+  border: 2px solid white;
+}
+.green {
+  background-color: green;
+  color: white;
+  border: 2px solid white;
+}
+
+input[type="text" i] {
+  padding: 5px 70px;
+  margin-bottom: 1.5rem;
+  outline: none;
+}
+
+.ranking-table {
+  border-collapse: collapse;
+  border: 2px solid rgb(200, 200, 200);
+  letter-spacing: 1px;
+  font-size: 0.8rem;
+}
+
+td,
+th {
+  border: 1px solid rgb(190, 190, 190);
+  padding: 10px 20px;
+}
+
+th {
+  background-color: rgb(235, 235, 235);
+}
+
+td {
+  text-align: center;
+}
+
+tr:nth-child(even) td {
+  background-color: rgb(250, 250, 250);
+}
+
+tr:nth-child(odd) td {
+  background-color: rgb(245, 245, 245);
+}
+
+caption {
+  padding: 10px;
+}
+
+.time-over-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#time-over-message {
+  max-width: 600px;
+  line-height: 2;
+  font-size: 18px;
+  margin-bottom: 3rem;
+}
+
+.ranking-section {
+  display: flex;
+  justify-content: center;
+}

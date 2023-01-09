@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <title>Pasapalabra</title>
+</head>
+
+<body>
+  <h1 class="game-title">Pasapalabra</h1>
+  <section class="game-rules-section hidden">
+    <p id="game-rules">BIENVENIDOS AL JUEGO DE PASAPALABRA DE ISDI CODERS ACADEMY!
+      Se mostraran unas definiciones por pantalla y el usuario deberá responder con la palabra a la que
+      corresponden. El usuario tiene la opción de decir Pasapalabra y dejar esa definición para mas adelante.
+      El programa es sensible a las acentuación, asi que se debe introducir la palabra sin tilde. Es posible
+      utilizar la tecla ENTER para enviar la palabra.
+      Puedes abandonar el juego introduciendo la palabra end, pero no participarás del ranking de puntos.
+    </p>
+    <form id="form-player-name">
+      <input type="text" placeholder="Enter your name" id="player-name">
+      <button class="button">Play</button>
+    </form>
+  </section>
+  <div class="game-container hidden">
+    <main id="rosco-container">
+    </main>
+    <section id="display-questions">
+      <p class="questions"></p>
+      <form id="form-answers">
+        <input id="input" type="text" autocomplete="off">
+        <button id="buttonAnswer" class="button">enviar</button>
+      </form>
+      <p id="correctAnswered"></p>
+      <p class="timer"></p>
+    </section>
+  </div>
+  <section class="ranking-section">
+    <table class="ranking-table hidden">
+      <tr>
+        <th>position</th>
+        <th>name</th>
+        <th>points</th>
+        <th>correct answers</th>
+        <th>wrong answers</th>
+    </table>
+  </section>
+  <section class="time-over-section hidden">
+    <p id="time-over-message"></p>
+    <button class="button-play-again button hidden">Play again</button>
+  </section>
+
+
+  <script src="index.js" type="module"></script>
+</body>
+
+</html>
